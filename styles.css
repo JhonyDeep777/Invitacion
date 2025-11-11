@@ -212,11 +212,16 @@ body {
 }
 
 .icon-float {
-    font-size: 4rem;
+    width: 60px; /* tamaño total del icono */
     animation: float 3s ease-in-out infinite;
     display: inline-block;
     margin-bottom: 1rem;
 }
+.icon-float img {
+    width: 100%;
+    height: auto;
+}
+
 
 @keyframes float {
     0%, 100% {
