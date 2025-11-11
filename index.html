@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis 15 Años - María Paulina</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Fijo -->
+    <header id="header">
+        <div class="header-container">
+            <h1 class="cursive">Mis 15 Años - María Paulina</h1>
+            
+            <!-- Menu Desktop -->
+            <nav class="nav-desktop">
+                <button onclick="scrollToSection('inicio')">Inicio</button>
+                <button onclick="scrollToSection('countdown')">Cuenta Regresiva</button>
+                <button onclick="scrollToSection('ubicacion')">Ubicación</button>
+                <button onclick="scrollToSection('confirmar')">Confirmar Asistencia</button>
+            </nav>
+
+            <!-- Menu Mobile Toggle -->
+            <button class="menu-toggle" onclick="toggleMenu()">
+                <span id="menu-icon">☰</span>
+            </button>
+        </div>
+
+        <!-- Menu Mobile -->
+        <nav id="nav-mobile" class="nav-mobile hidden">
+            <button onclick="scrollToSection('inicio')">Inicio</button>
+            <button onclick="scrollToSection('countdown')">Cuenta Regresiva</button>
+            <button onclick="scrollToSection('ubicacion')">Ubicación</button>
+            <button onclick="scrollToSection('confirmar')">Confirmar Asistencia</button>
+        </nav>
+    </header>
+
+    <!-- Sección 1: Portada con María Paulina -->
+    <!-- REEMPLAZA: images/img1.jpg con tu imagen de portada -->
+    <section id="inicio" class="section-full" style="background-image: url('images/img1.jpg');">
+        <!-- Placeholder temporal - Quitar cuando agregues la imagen -->
+    
+    </section>
+
+    <!-- Sección 2: Cuenta Regresiva -->
+    <section id="countdown" class="section-full leaf-gradient">
+        <div class="countdown-container fade-in">
+            <div class="icon-float">📅</div>
+            <h2 class="cursive">Faltan Solo...</h2>
+            
+            <div class="countdown-grid">
+                <div class="countdown-card">
+                    <div class="countdown-number" id="days">0</div>
+                    <div class="countdown-label">Días</div>
+                </div>
+                <div class="countdown-card">
+                    <div class="countdown-number" id="hours">0</div>
+                    <div class="countdown-label">Horas</div>
+                </div>
+                <div class="countdown-card">
+                    <div class="countdown-number" id="minutes">0</div>
+                    <div class="countdown-label">Minutos</div>
+                </div>
+                <div class="countdown-card">
+                    <div class="countdown-number" id="seconds">0</div>
+                    <div class="countdown-label">Segundos</div>
+                </div>
+            </div>
+            
+            <p class="countdown-text">Para el evento más especial</p>
+        </div>
+    </section>
+
+    <!-- Sección 3: Imagen 2 - Mensaje -->
+    <!-- REEMPLAZA: images/img2.jpg con tu imagen del mensaje -->
+    <section class="section-full" style="background-image: url('images/img2.jpg');">
+        <!-- Placeholder temporal - Quitar cuando agregues la imagen -->
+       
+    </section>
+
+    <!-- Sección 4: Imagen 3 - Fecha y hora -->
+    <!-- REEMPLAZA: images/img3.jpg con tu imagen de fecha/hora -->
+    <section class="section-full" style="background-image: url('images/img3.jpg');">
+        <!-- Placeholder temporal - Quitar cuando agregues la imagen -->
+       
+    </section>
+
+    <!-- Sección 5: Imagen 4 - Ubicación y Dress Code -->
+    <!-- REEMPLAZA: images/img4.jpg con tu imagen de dress code -->
+    <a href="https://www.google.com/maps/place/D'+Lirios+Eventos/@6.2837413,-75.5566411,17z" target="_blank" rel="noopener noreferrer">
+        <section class="section-full" style="background-image: url('images/img4.jpg'); cursor: pointer;">
+        </section>
+    </a>
+
+    <!-- Sección 6: Ubicación con Google Maps -->
+    <section id="ubicacion" class="ubicacion-section fade-in">
+        <div class="container">
+            <div class="section-header">
+                <div class="icon-float">📍</div>
+                <h2 class="cursive">Ubicación del Evento</h2>
+                <p>Te esperamos en este lugar especial</p>
+            </div>
+            
+            <!-- REEMPLAZA: El src del iframe con tu ubicación de Google Maps -->
+            <div class="map-container">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.847709339662!2d-75.5566411!3d6.2837413!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e4428c952c6dacf%3A0x623ea8b2b161c09b!2sD&#39;%20Lirios%20Eventos!5e0!3m2!1sen!2sco!4v1762815613197!5m2!1sen!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                    width="100%"
+                    height="450"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+            
+            <!-- REEMPLAZA: El href con tu enlace de Google Maps -->
+            <div class="map-button">
+                <a href="https://www.google.com/maps" target="_blank" rel="noopener noreferrer">
+                    📍 Abrir en Google Maps
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección 7: Confirmación de Asistencia -->
+    <section id="confirmar" class="confirmar-section leaf-gradient fade-in">
+        <div class="container-small">
+            <div class="section-header">
+                <div class="icon-float">💌</div>
+                <h2 class="cursive">Confirma tu Asistencia</h2>
+                <p>Tu presencia es muy importante para mí</p>
+            </div>
+
+            <!-- Formulario -->
+            <div id="form-container" class="form-card">
+                <!-- CONECTA CON FORMSPREE: Agrega action="https://formspree.io/f/TU_ID" method="POST" -->
+                <div class="form-content">
+                    <div class="form-group">
+                        <label for="name">Tu Nombre Completo</label>
+                        <input 
+                            type="text" 
+                            id="name" 
+                            name="name" 
+                            placeholder="Escribe tu nombre" 
+                            required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>¿Asistirás al evento?</label>
+                        <div class="radio-group">
+                            <label class="radio-label">
+                                <input type="radio" name="attending" value="si" checked>
+                                <span>Sí, asistiré</span>
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="attending" value="no">
+                                <span>No podré asistir</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Mensaje (opcional)</label>
+                        <textarea 
+                            id="message" 
+                            name="message" 
+                            rows="4" 
+                            placeholder="Déjame un mensaje especial..."></textarea>
+                    </div>
+
+                    <button type="button" onclick="submitForm()" class="submit-btn">
+                        💌 Enviar Confirmación
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mensaje de éxito (oculto inicialmente) -->
+            <div id="success-message" class="form-card hidden">
+                <div class="success-content">
+                    <div class="success-icon">✨</div>
+                    <h3 class="cursive">¡Gracias por Confirmar!</h3>
+                    <p>Tu respuesta ha sido recibida. ¡Te espero en mi celebración!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección 8: Agradecimiento Final -->
+    <section class="final-section gold-gradient fade-in">
+        <div class="final-content">
+            <div class="icon-float">🌸</div>
+            <h2 class="cursive">Gracias por Acompañarme</h2>
+            <p class="final-text">Este día será inolvidable con tu presencia</p>
+            <div class="final-signature">
+                <div class="signature-label">Con cariño,</div>
+                <div class="signature-name cursive">María Paulina</div>
+            </div>
+        </div>
+    </section>
+
+<audio id="musicaFondo" autoplay loop>
+    <source src="audio/musica.mp3" type="audio/mpeg">
+</audio>
+
+<script src="script.js"></script>
+</body>
+</html>
