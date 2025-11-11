@@ -599,3 +599,35 @@ body {
         font-size: 2.5rem;
     }
 }
+
+/* Botón flotante de música */
+.btn-musica {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 9999;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: none;
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    font-size: 26px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.btn-musica:hover {
+    transform: scale(1.15);
+    background-color: rgba(255, 215, 0, 0.9);
+}
+
+/* Animación cuando la música está activa */
+.btn-musica.activo {
+    animation: girar 3s linear infinite;
+}
+
+@keyframes girar {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}

@@ -239,23 +239,15 @@ console.log('📅 Fecha del evento:', eventDate.toLocaleDateString('es-ES', {
 
 // Musica 
 
-const musica = document.getElementById('musicaFondo');
+function activarMusica() {
+    const musica = document.getElementById('musicaFondo');
+    const boton = document.getElementById('btnMusica');
 
-// Intenta reproducir automáticamente al cargar la página
-window.addEventListener('load', async () => {
-  try {
-    await musica.play();
-  } catch (e) {
-    // Si el navegador bloquea el autoplay, espera la primera interacción del usuario
-    const activarMusica = () => {
-      musica.play();
-      document.removeEventListener('click', activarMusica);
-      document.removeEventListener('scroll', activarMusica);
-      document.removeEventListener('keydown', activarMusica);
-    };
-
-    document.addEventListener('click', activarMusica);
-    document.addEventListener('scroll', activarMusica);
-    document.addEventListener('keydown', activarMusica);
-  }
-});
+    if (musica.paused) {
+        musica.play();
+        boton.classList.add('activo');
+    } else {
+        musica.pause();
+        boton.classList.remove('activo');
+    }
+}
