@@ -678,11 +678,13 @@ body {
 @media (max-width: 768px) {
     /* Ajustar secciones completas para evitar recortes */
     .section-full {
-        height: auto;
-        min-height: 100vh;
-        padding: 5rem 1rem 3rem;
-        background-size: cover;
+    height: auto;
+    min-height: 100vh;
+    padding: 5rem 1rem 3rem;
+    background-size: contain; /* conserva todo visible */
+    background-position: center;
     }
+
 
     /* Alinear textos correctamente */
     .image-placeholder h2 {
@@ -763,6 +765,49 @@ body {
 
     .countdown-label {
         font-size: 0.9rem;
+    }
+}
+
+/* ===============================
+   SECCIÓN LLUVIA DE SOBRES
+   =============================== */
+.sobres-section {
+    background: linear-gradient(180deg, #fff8f3 0%, #fef6e4 100%);
+    text-align: center;
+    padding: 6rem 2rem;
+    color: #5a3e2b;
+}
+
+.sobres-section .icon-float {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.sobres-section h2 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 3rem;
+    color: #a67c52;
+    margin-bottom: 1rem;
+}
+
+.sobres-text {
+    font-size: 1.2rem;
+    font-family: 'Playfair Display', serif;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .sobres-section {
+        padding: 4rem 1.5rem;
+    }
+    .sobres-section h2 {
+        font-size: 2.4rem;
+    }
+    .sobres-text {
+        font-size: 1.1rem;
     }
 }
 
