@@ -631,3 +631,43 @@ body {
     from { transform: rotate(0deg); }
     to { transform: rotate(360deg); }
 }
+
+
+
+
+.lluvia-sobres {
+    margin-top: 40px;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 20px;
+    padding: 25px;
+    text-align: center;
+    color: #fff;
+    font-family: 'Playfair Display', serif;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 4px 12px rgba(255, 215, 0, 0.3);
+    animation: fadeInUp 1.5s ease;
+}
+
+.lluvia-sobres h3 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 2em;
+    color: gold;
+    margin-bottom: 10px;
+}
+
+.lluvia-sobres p {
+    font-size: 1em;
+    color: #f9f9f9;
+}
+
+/* Animación suave */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
