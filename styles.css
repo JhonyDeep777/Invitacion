@@ -671,3 +671,98 @@ body {
         transform: translateY(0);
     }
 }
+
+/* ========================================
+   CORRECCIÓN RESPONSIVE CELULARES
+   ======================================== */
+@media (max-width: 768px) {
+    /* Ajustar secciones completas para evitar recortes */
+    .section-full {
+        height: auto;
+        min-height: 100vh;
+        padding: 5rem 1rem 3rem;
+        background-size: cover;
+    }
+
+    /* Alinear textos correctamente */
+    .image-placeholder h2 {
+        font-size: 2rem;
+    }
+
+    .image-placeholder p,
+    .image-placeholder .desc {
+        font-size: 1.1rem;
+        max-width: 90%;
+        margin: 0 auto;
+    }
+
+    /* Mejor espaciado en formulario */
+    .form-card {
+        padding: 1.5rem;
+    }
+
+    .form-group label {
+        font-size: 1rem;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        font-size: 1rem;
+    }
+
+    /* Ajustar header */
+    .header-container {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0.8rem 1.2rem;
+    }
+
+    #header h1 {
+        font-size: 1.3rem;
+    }
+
+    /* Centrar contenido final */
+    .final-content {
+        padding: 1rem;
+    }
+
+    .final-content h2 {
+        font-size: 2.5rem;
+    }
+
+    .final-text {
+        font-size: 1.1rem;
+    }
+
+    .signature-name {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Reducir padding y evitar overflow */
+    body {
+        overflow-x: hidden;
+    }
+
+    .section-full {
+        padding: 4rem 1rem 2rem;
+    }
+
+    .map-container iframe {
+        height: 250px;
+    }
+
+    .countdown-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .countdown-number {
+        font-size: 1.8rem;
+    }
+
+    .countdown-label {
+        font-size: 0.9rem;
+    }
+}
+
